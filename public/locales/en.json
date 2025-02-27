@@ -1,0 +1,25 @@
+{
+  "common": {
+    "search": "Search",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "favorites": "Favorites",
+    "home": "Home",
+    "loading": "Loading..."
+  },
+  "country": {
+    "name": "Name",
+    "capital": "Capital",
+    "region": "Region",
+    "languages": "Languages",
+    "population": "Population",
+    "area": "Area",
+    "addToFavorites": "Add to Favorites",
+    "removeFromFavorites": "Remove from Favorites"
+  },
+  "filters": {
+    "byRegion": "Filter by Region",
+    "byLanguage": "Filter by Language",
+    "byName": "Search by Name"
+  }
+} 
