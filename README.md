@@ -1,201 +1,202 @@
+[🇧🇷️](README-PTBR.md)
 # 🌎 Search Country App
 
-Uma aplicação web moderna e responsiva para explorar informações sobre países, com suporte a múltiplos idiomas e temas.
+A modern and responsive web application to explore country information, supporting multiple languages ​​and themes.
 
-## 📋 Índice
+## 📋 Table of Contents
 
-- [Visão Geral](#-visão-geral)
-- [Funcionalidades](#-funcionalidades)
-- [Tecnologias](#-tecnologias)
-- [Arquitetura](#-arquitetura)
-- [Instalação](#-instalação)
-- [Estrutura do Projeto](#-estrutura-do-projeto)
-- [Componentes](#-componentes)
-- [Contextos](#-contextos)
-- [Serviços](#-serviços)
-- [Internacionalização](#-internacionalização)
-- [Temas](#-temas)
+- [Overview](#-overview)
+- [Features](#-features)
+- [Technologies](#-technologies)
+- [Architecture](#-architecture)
+- [Installation](#-installation)
+- [Project Structure](#-project-structure)
+- [Components](#-components)
+- [Contexts](#-contexts)
+- [Services](#-services)
+- [Internationalization](#-internationalization)
+- [Themes](#-themes)
 - [Performance](#-performance)
-- [Contribuição](#-contribuição)
-- [Licença](#-licença)
+- [Contribution](#-contribution)
+- [License](#-license)
 
-## 🔭 Visão Geral
+## 🔭 Overview
 
-O Search Country é uma aplicação web que permite aos usuários:
-- Explorar países de todo o mundo
-- Buscar países por nome
-- Filtrar países por região
-- Salvar países favoritos
-- Alternar entre temas claro e escuro
-- Alternar entre português e inglês
+Search Country is a web application that allows users to:
+- Explore countries around the world
+- Search countries by name
+- Filter countries by region
+- Save favorite countries
+- Toggle between light and dark themes
+- Toggle between Portuguese and English
 
-## ⭐ Funcionalidades
+## ⭐ Features
 
-### Busca e Filtros
-- 🔍 Busca em tempo real por nome de país
-- 🌍 Filtro por região (África, Américas, Ásia, Europa, Oceania)
-- 💾 Persistência de favoritos no localStorage
-- 🌓 Tema escuro/claro com persistência
-- 🌐 Suporte a múltiplos idiomas (PT-BR/EN)
+### Search and Filters
+- 🔍 Real-time search by country name
+- 🌍 Filter by region (Africa, Americas, Asia, Europe, Oceania)
+- 💾 Favorites persistence in localStorage
+- 🌓 Dark/light theme with persistence
+- 🌐 Multiple language support (PT-BR/EN)
 
 ### Interface
-- 📱 Design responsivo para todos os dispositivos
-- 🎨 Temas claro e escuro
-- ⚡ Animações suaves com Framer Motion
-- 🎯 Acessibilidade com ARIA labels
-- 🖼️ Lazy loading de imagens
+- 📱 Responsive design for all devices
+- 🎨 Light and dark themes
+- ⚡ Smooth animations with Framer Motion
+- 🎯 Accessibility with ARIA labels
+- 🖼️ Lazy loading of images
 
-## 🚀 Tecnologias
+## 🚀 Technologies
 
 ### Core
-- **React 18** - Biblioteca principal
-- **Vite** - Build tool e dev server
-- **React Router 6** - Roteamento
-- **Context API** - Gerenciamento de estado
+- **React 18** - Core library
+- **Vite** - Build tool and dev server
+- **React Router 6** - Routing
+- **Context API** - State management
 
-### Estilização
-- **Tailwind CSS** - Framework CSS utilitário
-- **PostCSS** - Processador CSS
-- **Framer Motion** - Biblioteca de animações
+### Styling
+- **Tailwind CSS** - Utility CSS framework
+- **PostCSS** - CSS processor
+- **Framer Motion** - Animation library
 
-### Dados e Estado
-- **Axios** - Cliente HTTP
-- **localStorage** - Persistência local
-- **i18next** - Internacionalização
+### Data and State
+- **Axios** - HTTP client
+- **localStorage** - Local persistence
+- **i18next** - Internationalization
 
-### Desenvolvimento
+### Development
 - **ESLint** - Linting
-- **React Icons** - Ícones
-- **Headless UI** - Componentes acessíveis
+- **React Icons** - Icons
+- **Headless UI** - Accessible components
 
-## 🏗 Arquitetura
+## 🏗 Architecture
 
 ```mermaid
 graph TD
-    A[App] --> B[Router]
-    B --> C[FavoritesProvider]
-    C --> D[Navbar]
-    C --> E[Pages]
-    E --> F[Home]
-    E --> G[Favorites]
-    F --> H[SearchBar]
-    F --> I[CountryCard]
-    G --> I
-    D --> J[ThemeToggle]
-    D --> K[LanguageSelector]
-    F --> L[API Service]
-    I --> M[FavoritesContext]
+A[App] --> B[Router]
+B --> C[FavoritesProvider]
+C --> D[Navbar]
+C --> E[Pages]
+E --> F[Home]
+E --> G[Favorites]
+F --> H[SearchBar]
+F --> I[CountryCard]
+G --> I
+D --> J[ThemeToggle]
+D --> K[LanguageSelector]
+F --> L[API Service]
+I --> M[FavoritesContext]
 ```
 
-## 🛠️ Instalação
+## 🛠️ Installation
 
-1. Clone o repositório:
+1. Clone the repository:
 ```bash
-git clone https://github.com/seu-usuario/search-country.git
+git clone https://github.com/your-username/search-country.git
 cd search-country
 ```
 
-2. Instale as dependências:
+2. Install the dependencies:
 ```bash
 npm install
 ```
 
-3. Inicie o servidor de desenvolvimento:
+3. Start the development server:
 ```bash
 npm run dev
 ```
 
-4. Build para produção:
+4. Build for production:
 ```bash
 npm run build
 ```
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 search-country/
 ├── public/
-│   ├── locales/          # Arquivos de tradução
-│   └── vite.svg          # Favicon
+│ ├── locales/ # Translation files
+│ └── vite.svg # Favicon
 ├── src/
-│   ├── components/       # Componentes reutilizáveis
-│   ├── context/         # Contextos React
-│   ├── pages/          # Páginas da aplicação
-│   ├── services/       # Serviços e APIs
-│   └── ...            # Arquivos de configuração
+│ ├── components/ # Reusable components
+│ ├── context/ # React contexts
+│ ├── pages/ # Application pages
+│ ├── services/ # Services and APIs
+│ └── ... # Configuration files
 ```
 
-## 🧩 Componentes
+## 🧩 Components
 
 ### Navbar
-- Navegação principal
-- Alternador de tema
-- Seletor de idioma
-- Link para favoritos
+- Main navigation
+- Theme switcher
+- Language selector
+- Bookmark link
 
 ### SearchBar
-- Input de busca
-- Seletor de região
-- Feedback visual
-- Debounce na busca
+- Search input
+- Region selector
+- Visual feedback
+- Search debounce
 
 ### CountryCard
-- Exibição de dados do país
-- Botão de favorito
-- Lazy loading de imagem
-- Animações de hover
+- Display country data
+- Favorite button
+- Lazy image loading
+- Hover animations
 
-## 💾 Contextos
+## 💾 Contexts
 
 ### FavoritesContext
-- Gerencia países favoritos
-- Persistência no localStorage
-- Métodos de adicionar/remover
-- Estado global de favoritos
+- Manage favorite countries
+- Persistence in localStorage
+- Add/remove methods
+- Global favorite state
 
-## 🌐 Serviços
+## 🌐 Services
 
 ### API
-- Integração com Rest Countries API
-- Tratamento de erros
-- Cache de requisições
-- Tipagem de respostas
+- Integration with Rest Countries API
+- Error handling
+- Request caching
+- Response typing
 
-## 🌍 Internacionalização
+## 🌍 Internationalization
 
-- Suporte a PT-BR e EN
-- Traduções completas
-- Persistência de idioma
-- Fallback para EN
+- Support for PT-BR and EN
+- Full translations
+- Language persistence
+- Fallback to EN
 
-## 🎨 Temas
+## 🎨 Themes
 
-### Claro
-- Cores suaves
-- Alto contraste
-- Sombras sutis
+### Light
+- Soft colors
+- High contrast
+- Subtle shadows
 
-### Escuro
-- Cores escuras
-- Contraste adequado
-- Redução de luz azul
+### Dark
+- Dark colors
+- Adequate contrast
+- Blue light reduction
 
 ## ⚡ Performance
 
-- Lazy loading de imagens
-- Code splitting por rota
-- Minificação de assets
-- Caching de API
-- Otimização de bundle
+- Lazy image loading
+- Code splitting per route
+- Asset Minification
+- API Caching
+- Bundle Optimization
 
-## 🤝 Contribuição
+## 🤝 Contribution
 
-1. Fork o projeto
-2. Crie sua branch (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
+1. Fork the project
+2. Create your branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 📝 Licença
+## 📝 License
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
