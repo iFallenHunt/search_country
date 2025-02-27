@@ -25,6 +25,7 @@
     "regionResults": "Países da região",
     "languageResults": "Países que falam",
     "clearFilter": "Limpar filtro",
-    "noResults": "Nenhum país encontrado"
+    "noResults": "Nenhum país encontrado",
+    "totalCountries": "{{count}} países encontrados"
   }
 } 

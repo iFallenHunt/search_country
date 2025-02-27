@@ -25,6 +25,7 @@
     "regionResults": "Countries in",
     "languageResults": "Countries speaking",
     "clearFilter": "Clear filter",
-    "noResults": "No countries found"
+    "noResults": "No countries found",
+    "totalCountries": "{{count}} countries found"
   }
 } 

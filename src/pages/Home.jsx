@@ -120,6 +120,7 @@ const Home = () => {
         onSearch={handleSearch} 
         onRegionChange={handleRegionChange}
         onLanguageChange={handleLanguageChange}
+        totalCountries={countries.length}
       />
       
       {activeFilter.type && (

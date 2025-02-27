@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaSearch } from 'react-icons/fa';
 
-const SearchBar = ({ onSearch, onRegionChange, onLanguageChange }) => {
+const SearchBar = ({ onSearch, onRegionChange, onLanguageChange, totalCountries }) => {
   const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState('');
   const regions = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
@@ -28,21 +28,27 @@ const SearchBar = ({ onSearch, onRegionChange, onLanguageChange }) => {
 
   return (
     <div className="search-bar-responsive">
-      <form onSubmit={handleSubmit} className="flex-1">
-        <div className="relative">
-          <input
-            type="text"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            placeholder={t('filters.byName')}
-            className="input-primary pl-10"
-          />
-          <FaSearch 
-            className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
-            aria-hidden="true"
-          />
+      <div className="flex-1 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+        <form onSubmit={handleSubmit} className="flex-1">
+          <div className="relative">
+            <input
+              type="text"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              placeholder={t('filters.byName')}
+              className="input-primary pl-10"
+            />
+            <FaSearch 
+              className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+              aria-hidden="true"
+            />
+          </div>
+        </form>
+
+        <div className="text-sm text-textLight dark:text-textDark whitespace-nowrap">
+          {t('filters.totalCountries', { count: totalCountries })}
         </div>
-      </form>
+      </div>
 
       <div className="flex flex-col sm:flex-row gap-4">
         <select
