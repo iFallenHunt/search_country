@@ -20,6 +20,11 @@
   "filters": {
     "byRegion": "Filter by Region",
     "byLanguage": "Filter by Language",
-    "byName": "Search by Name"
+    "byName": "Search by Name",
+    "searchResults": "Search results",
+    "regionResults": "Countries in",
+    "languageResults": "Countries speaking",
+    "clearFilter": "Clear filter",
+    "noResults": "No countries found"
   }
 } 

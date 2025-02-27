@@ -2,10 +2,24 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaSearch } from 'react-icons/fa';
 
-const SearchBar = ({ onSearch, onRegionChange }) => {
+const SearchBar = ({ onSearch, onRegionChange, onLanguageChange }) => {
   const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState('');
   const regions = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
+  const languages = [
+    'English',
+    'Spanish',
+    'Portuguese',
+    'French',
+    'German',
+    'Italian',
+    'Dutch',
+    'Russian',
+    'Arabic',
+    'Chinese',
+    'Japanese',
+    'Korean'
+  ];
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -30,18 +44,33 @@ const SearchBar = ({ onSearch, onRegionChange }) => {
         </div>
       </form>
 
-      <select
-        onChange={(e) => onRegionChange(e.target.value)}
-        className="input-primary sm:max-w-[200px]"
-        aria-label={t('filters.byRegion')}
-      >
-        <option value="">{t('filters.byRegion')}</option>
-        {regions.map((region) => (
-          <option key={region} value={region}>
-            {region}
-          </option>
-        ))}
-      </select>
+      <div className="flex flex-col sm:flex-row gap-4">
+        <select
+          onChange={(e) => onRegionChange(e.target.value)}
+          className="input-primary sm:max-w-[200px]"
+          aria-label={t('filters.byRegion')}
+        >
+          <option value="">{t('filters.byRegion')}</option>
+          {regions.map((region) => (
+            <option key={region} value={region}>
+              {region}
+            </option>
+          ))}
+        </select>
+
+        <select
+          onChange={(e) => onLanguageChange(e.target.value)}
+          className="input-primary sm:max-w-[200px]"
+          aria-label={t('filters.byLanguage')}
+        >
+          <option value="">{t('filters.byLanguage')}</option>
+          {languages.map((language) => (
+            <option key={language} value={language}>
+              {language}
+            </option>
+          ))}
+        </select>
+      </div>
     </div>
   );
 };

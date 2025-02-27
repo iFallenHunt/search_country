@@ -35,4 +35,21 @@ export const getCountryByRegion = async (region) => {
     console.error('Error fetching countries by region:', error);
     throw error;
   }
+};
+
+export const getCountryByLanguage = async (language) => {
+  try {
+    // Como a API não tem endpoint direto para filtrar por idioma,
+    // vamos buscar todos os países e filtrar no cliente
+    const response = await api.get('/all');
+    return response.data.filter(country => {
+      if (!country.languages) return false;
+      return Object.values(country.languages).some(lang => 
+        lang.toLowerCase().includes(language.toLowerCase())
+      );
+    });
+  } catch (error) {
+    console.error('Error fetching countries by language:', error);
+    throw error;
+  }
 }; 
