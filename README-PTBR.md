@@ -34,25 +34,25 @@ O Search Country é uma aplicação web que permite aos usuários:
 ## 🖼️ View 
 
 <p align="center">
-  <a href="assets/img/home.png"><img src="assets/img/home.png" alt="Home" width="100"></a>
-  <a href="assets/img/home-white.png"><img src="assets/img/home-white.png" alt="Home White" width="100"></a>
-  <a href="assets/img/home-en.png"><img src="assets/img/home-en.png" alt="Home EN" width="100"></a>
+  <a href="assets/img/home.png"><img src="assets/img/home.png" alt="Home" width="150"></a>
+  <a href="assets/img/home-white.png"><img src="assets/img/home-white.png" alt="Home White" width="150"></a>
+  <a href="assets/img/home-en.png"><img src="assets/img/home-en.png" alt="Home EN" width="150"></a>
 </p>
 
 <p align="center">
-  <a href="assets/img/search.png"><img src="assets/img/search.png" alt="Search" width="100"></a>
-  <a href="assets/img/region.png"><img src="assets/img/region.png" alt="Region" width="100"></a>
-  <a href="assets/img/filter.png"><img src="assets/img/filter.png" alt="Filter" width="100"></a>
+  <a href="assets/img/search.png"><img src="assets/img/search.png" alt="Search" width="150"></a>
+  <a href="assets/img/region.png"><img src="assets/img/region.png" alt="Region" width="150"></a>
+  <a href="assets/img/filter.png"><img src="assets/img/filter.png" alt="Filter" width="150"></a>
 </p>
 
 <p align="center">
-  <a href="assets/img/language.png"><img src="assets/img/language.png" alt="language" width="100"></a>
-  <a href="assets/img/filter.png"><img src="assets/img/filter.png" alt="Filter" width="100"></a>
-  <a href="assets/img/countries.png"><img src="assets/img/countries.png" alt="Countries" width="100"></a>
+  <a href="assets/img/language.png"><img src="assets/img/language.png" alt="language" width="150"></a>
+  <a href="assets/img/filter.png"><img src="assets/img/filter.png" alt="Filter" width="150"></a>
+  <a href="assets/img/countries.png"><img src="assets/img/countries.png" alt="Countries" width="150"></a>
 </p>
 
 <p align="center">
-  <a href="./assets/img/favorites.png"><img src="./assets/img/favorites.png" alt="Favorites" width="100"></a>
+  <a href="./assets/img/favorites.png"><img src="./assets/img/favorites.png" alt="Favorites" width="150"></a>
 </p>
 
 ## ⭐ Funcionalidades
