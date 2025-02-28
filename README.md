@@ -30,6 +30,26 @@ Search Country is a web application that allows users to:
 - Toggle between light and dark themes
 - Toggle between Portuguese and English
 
+## 🖼️ View 
+
+![Home](./public/home.png)
+
+![Home en](./public/home-en.png)
+
+![Home White](./public/home-white.png)
+
+![Favorites](./public/favorites.png)
+
+![Filter](./public/filter.png)
+
+![Countries](./public/countries.png)
+
+![Language](./public/language.png)
+
+![Search](./public/search.png)
+
+![Region](./public/region.png)
+
 ## ⭐ Features
 
 ### Search and Filters
