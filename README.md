@@ -28,27 +28,31 @@ Search Country is a web application that allows users to:
 - Filter countries by region
 - Save favorite countries
 - Toggle between light and dark themes
-- Toggle between Portuguese and English
 
 ## 🖼️ View 
 
-![Home](./public/home.png)
+<p align="center">
+  <a href="assets/img/home.png"><img src="assets/img/home.png" alt="Home" width="100"></a>
+  <a href="assets/img/home-white.png"><img src="assets/img/home-white.png" alt="Home White" width="100"></a>
+  <a href="assets/img/home-en.png"><img src="assets/img/home-en.png" alt="Home EN" width="100"></a>
+</p>
 
-![Home en](./public/home-en.png)
+<p align="center">
+  <a href="assets/img/search.png"><img src="assets/img/search.png" alt="Search" width="100"></a>
+  <a href="assets/img/region.png"><img src="assets/img/region.png" alt="Region" width="100"></a>
+  <a href="assets/img/filter.png"><img src="assets/img/filter.png" alt="Filter" width="100"></a>
+</p>
 
-![Home White](./public/home-white.png)
+<p align="center">
+  <a href="assets/img/language.png"><img src="assets/img/language.png" alt="language" width="100"></a>
+  <a href="assets/img/filter.png"><img src="assets/img/filter.png" alt="Filter" width="100"></a>
+  <a href="assets/img/countries.png"><img src="assets/img/countries.png" alt="Countries" width="100"></a>
+</p>
 
-![Favorites](./public/favorites.png)
+<p align="center">
+  <a href="./assets/img/favorites.png"><img src="./assets/img/favorites.png" alt="Favorites" width="100"></a>
+</p>
 
-![Filter](./public/filter.png)
-
-![Countries](./public/countries.png)
-
-![Language](./public/language.png)
-
-![Search](./public/search.png)
-
-![Region](./public/region.png)
 
 ## ⭐ Features
 
